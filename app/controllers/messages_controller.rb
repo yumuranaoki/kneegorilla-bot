@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def index
-    Logger.debug('これはデバッグ')
+    logger.debug('これはデバッグ')
     render json: {
       result: 'ok'
     }
@@ -8,8 +8,8 @@ class MessagesController < ApplicationController
 
   def create
     content = params
-    Logger.debug(params)
-    Logger.debug('hoge')
+    logger.debug(params)
+    logger.debug('hoge')
     render json: {
       result: 'ok'
     }
