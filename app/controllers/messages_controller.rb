@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
   def index
+    Logger.debug('これはデバッグ')
     render json: {
       result: 'ok'
     }
